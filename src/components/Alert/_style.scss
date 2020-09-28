@@ -1,0 +1,17 @@
+.alert {
+  width: 250px;
+  background: $primary;
+  padding: 15px;
+  color: $white;
+  border-radius: $border-radius-lg;
+
+  .alert-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .alert-description {
+    font-size: $font-size-sm;
+    margin-top: .5rem;
+  }
+}
