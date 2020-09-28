@@ -21,19 +21,27 @@ const Alert: React.FC<AlertProps> = (props) => {
     alertType
   } = props
 
-  const classes = classNames(alert)
+  const classes = classNames('alert', {
+    [`alert-${alertType}`]: alertType
+  })
 
   return (
-    <div className="alert">
+    <div className={classes}>
       <div className="alert-header">
-        <div className="alert-title">测试标题</div>
+        <div className="alert-title">{title}</div>
         <span>X</span>
       </div>
-      <div className="alert-description">
-        测试描述
-      </div>
+      {description &&
+        <div className="alert-description">
+          {description}
+        </div>
+      }
     </div>
   )
+}
+
+Alert.defaultProps = {
+  alertType: AlertType.Default
 }
 
 export default Alert

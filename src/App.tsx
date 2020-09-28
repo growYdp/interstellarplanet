@@ -1,6 +1,6 @@
 import React from 'react';
 import Button, {ButtonType, ButtonSize, ButtonRadius} from './components/Button/button'
-import Alert from './components/Alert/alert'
+import Alert, {AlertType} from './components/Alert/alert'
 
 function App() {
   const a = () => {
@@ -14,7 +14,10 @@ function App() {
       <Button disabled={true} btnType={ButtonType.Primary}  radius={ButtonRadius.Small}>Primary</Button>
       <Button disabled={true} btnType={ButtonType.Link} href="www.baidu.com" >链接</Button>
       <Button btnType={ButtonType.Link} href="http://baidu.com" target="_blank">百度</Button>
-      <Alert />
+      <Alert title="测试alert" alertType={AlertType.Danger} />
+      <Alert title="测试alert"/>
+      <Alert title="测试alert" alertType={AlertType.Success} />
+      <Alert title="测试alert" alertType={AlertType.Warning} />
     </div>
   );
 }

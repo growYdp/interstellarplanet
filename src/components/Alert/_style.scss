@@ -8,10 +8,30 @@
   .alert-header {
     display: flex;
     justify-content: space-between;
+
+    span {
+      cursor: pointer;
+    }
   }
 
   .alert-description {
     font-size: $font-size-sm;
     margin-top: .5rem;
   }
+}
+
+.alert-default {
+  background: $primary;
+}
+
+.alert-danger {
+  background: $danger;
+}
+
+.alert-success {
+  background: $success;
+}
+
+.alert-warning {
+  background: $warning;
 }
