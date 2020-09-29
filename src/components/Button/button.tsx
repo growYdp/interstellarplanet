@@ -30,12 +30,12 @@ export enum ButtonShape {
 
 // base props
 interface BaseButtonProps {
-  className?: string,
-  disabled?: boolean,
-  size?: ButtonSize,
-  btnType?: ButtonType,
-  children?: React.ReactNode,
-  href?: string,
+  className?: string;
+  disabled?: boolean;
+  size?: ButtonSize;
+  btnType?: ButtonType;
+  children?: React.ReactNode;
+  href?: string;
   radius?: string
 }
 
